@@ -94,7 +94,7 @@ def take_out_life_and_magic(str_info):
     return life,magic
 
 def client_selections (move_kind,character_info,client_soc):
-    character_name=take_out_the_npame(character_info)
+    character_name=take_out_the_name(character_info)
     client_choice=character_name[1:]+"*"+move_kind
     client_soc.sendall(client_choice.encode())
 
